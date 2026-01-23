@@ -1,10 +1,10 @@
-## Multiclass Classification using Artificial Neural Networks (ANN)
+## Crop Yield Prediction using ANN (Artificial Neural Network)
 
 ### 📌 Project Overview
 
-The goal of this project is to demonstrate how a simple Feed-Forward Neural Network can learn patterns from a structured dataset to perform accurate predictions.
-
-    Task: Multiclass Classification
+This model was used in our Graduation Final Year Project to make predictions in Flutter mobile app.
+    
+    Task: Crop Prediction
 
     Model Type: Artificial Neural Network (ANN)
 
