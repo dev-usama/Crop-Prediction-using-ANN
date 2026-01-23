@@ -8,7 +8,7 @@ This model was used in our Graduation Final Year Project to make predictions in 
 
     Model Type: Artificial Neural Network (ANN)
 
-    Library Used: TensorFlow, Pandas, Numpy, & more.
+    Libraries Used: TensorFlow, Pandas, Numpy, & more.
 
 ### 📊 Dataset
 
