@@ -1,2 +1,5 @@
 /notebooks/.ipynb_checkpoints
 .env
+/models
+/scalers
+/encoders
