@@ -13,7 +13,7 @@ This model was used in our Graduation Final Year Project to make predictions in 
 ### 📊 Dataset
 
     Dataset Name: Crop Recommendation Dataset
-    Number of Class/Crops: 22
+    Number of Classes/Crops: 22
 
     Source Link: https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
 
