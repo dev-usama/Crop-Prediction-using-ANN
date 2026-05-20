@@ -6,7 +6,7 @@ This backend was used in our Graduation Final Year Project to make predictions i
     
     Task: Crop Prediction
 
-    Model Type: Artificial Neural Network (ANN)
+    Technologies: Python, Docker, & Artificial Neural Network (ANN)
 
     Libraries Used: TensorFlow, Pandas, Numpy, & more.
 
