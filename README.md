@@ -2,13 +2,15 @@
 
 ### 📌 Project Overview
 
-This model was used in our Graduation Final Year Project to make predictions in Flutter mobile app.
+This backend was used in our Graduation Final Year Project to make predictions in Flutter mobile app.
     
     Task: Crop Prediction
 
     Model Type: Artificial Neural Network (ANN)
 
     Libraries Used: TensorFlow, Pandas, Numpy, & more.
+
+    Frameworks used: Flask
 
 ### 📊 Dataset
 
