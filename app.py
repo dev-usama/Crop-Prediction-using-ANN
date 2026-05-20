@@ -25,12 +25,12 @@ def make_prediction(Na, P, temp, humidity, PH):
 @app.route('/api/predict', methods=['POST'])
 def index():
     try:
-        f2 = float(request.form['phosphorus'])
-        f1 = float(request.form['nitrogen'])
-        f4 = float(request.form['temperature'])
-        f5 = float(request.form['humidity'])
-        f6 = float(request.form['PH'])
-        crop = make_prediction(f1, f2, f4, f5, f6)
+        P = float(request.form['phosphorus'])
+        N = float(request.form['nitrogen'])
+        temp = float(request.form['temperature'])
+        humidity = float(request.form['humidity'])
+        PH = float(request.form['PH'])
+        crop = make_prediction(N, P, temp, humidity, PH)
         if not crop:
             raise Exception("Something went wrong")
         return crop
