@@ -23,14 +23,15 @@ def make_prediction(Na, P, temp, humidity, PH):
         return ex
 
 @app.route('/api/predict', methods=['POST'])
-def index():
+def predict_crop():
     try:
-        P = float(request.form['phosphorus'])
-        N = float(request.form['nitrogen'])
-        temp = float(request.form['temperature'])
-        humidity = float(request.form['humidity'])
-        PH = float(request.form['PH'])
-        crop = make_prediction(N, P, temp, humidity, PH)
+        data = request.get_json()
+        phosphorus = float(data.get('phosphorus'))
+        nitrogen = float(data.get('nitrogen'))
+        temperature = float(data.get('temperature'))
+        humidity = float(data.get('humidity'))
+        PH = float(data.get('PH'))
+        crop = make_prediction(nitrogen, phosphorus, temperature, humidity, PH)
         if not crop:
             raise Exception("Something went wrong")
         return crop
@@ -39,4 +40,4 @@ def index():
         return "Something went wrong"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('0.0.0.0', debug=True)
