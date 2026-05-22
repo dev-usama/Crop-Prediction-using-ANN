@@ -26,3 +26,15 @@ After training with dropout regularization & Adam optimization algorithm, the mo
 
 1. Accuracy: 92%
 2. Loss: 0.2
+
+### Usage 
+
+    API: https://dev-usama-ahmed-crop-prediction-backend-ann.hf.space/api/predict
+    Only one POST API expecting JSON
+    sample data = {
+        "phosphorus": 42,
+        "nitrogen": 90,
+        "temperature": 20.879744,
+        "humidity": 82.002744,
+        "PH": 8.502985
+    }
