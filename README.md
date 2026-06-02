@@ -28,7 +28,7 @@ After training with dropout regularization & Adam optimization algorithm, the mo
 2. Loss: 0.2
 
 ### Usage 
-
+    API is from HuggingFace Free Tier Space so it will take 2 to 3 minutes to wake up
     API: https://dev-usama-ahmed-crop-prediction-backend-ann.hf.space/api/predict
     Only one POST API expecting JSON
     sample data = {
