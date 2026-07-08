@@ -1,16 +1,26 @@
-# Importing Libraries
+from dotenv import load_dotenv
 from flask import Flask, request
 import tensorflow as tf
 import joblib
 import numpy as np
 from pathlib import Path
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+import os
 
+load_dotenv()
 dir = Path(__file__).parent
 
 scaler = joblib.load(dir / 'scalers/crp_scaler_ann.pkl')
 labelEncoder = joblib.load(dir / 'encoders/crp_label_encoder.pkl')
 ANN = tf.keras.models.load_model(dir / "models/crpann.keras")
 app = Flask(__name__)
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=["200 per day", "20 per hour"],
+    storage_uri=os.getenv("mongodb_uri"),
+)
 
 def make_prediction(Na, P, temp, humidity, PH):
     try:
